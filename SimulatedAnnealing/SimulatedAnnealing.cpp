@@ -195,3 +195,7 @@ double SimulatedAnnealing::algorithmSimulatedAnnealing(vector<vector<int>> origi
 
 	return timer.stop();
 }
+
+int SimulatedAnnealing::getfoundOptimum() {
+	return foundOptimum;
+}

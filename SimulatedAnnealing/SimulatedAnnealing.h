@@ -52,6 +52,8 @@ public:
 	// algorytm Simulated Annealing
 	double algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost);
 
+	int getfoundOptimum();
+
 	// ustawienia Simulated Annealing
 	void settingsSimulatedAnnealing(double initialTemperature, double minTemperature);
 };

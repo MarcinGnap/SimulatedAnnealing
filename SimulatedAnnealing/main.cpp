@@ -33,21 +33,24 @@ int main() {
 
 	cout << "\n \nChecking input file...\n";
 
+	cout << "\nLoading Graph...\n";
+	Graph* myGraph = new Graph(reader.iNOfVertices, reader.iVertices);
+
+	cout << "\n \nGraph output: \n";
+	myGraph->display();
+
 	cout << "Calculating...\n";	
 
 	long long llMinTime = INT_MAX;
 	long long llMaxTime = 0;
 	for (int n = 0; n < reader.iRNumber; ++n) {
 		long long llTempTime = 0;
-		cout << "\nLoading Graph...\n";
-		Graph* myGraph = new Graph(reader.iNOfVertices, reader.iVertices);
-
-		cout << "\n \nGraph output: \n";
-		myGraph->display();
+		
 
 		vector<int> path;
 		int cost;
 		double exeTime;
+		float errorRate;
 
 		// parametry SA
 		vector<double> initTemp = { 2500.0 };
@@ -57,19 +60,17 @@ int main() {
 
 		SimulatedAnnealing* test = new SimulatedAnnealing();
 
-		//auto o1 = chrono::high_resolution_clock::now();
-
-		cout << "Doing " << n << "time... \n";
+		cout << "Doing " << n + 1 << " time... \n";
 		test->settingsSimulatedAnnealing(initTemp[0], minTemp[0]);
 		exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost);
 
 		cout << "Time " << exeTime << " of sth\n";
+		cout << "Found solution " << test->getfoundOptimum() << endl;
+		cout << "Optimal solution " << reader.iOCost << endl;
+		errorRate = (static_cast<float>(test->getfoundOptimum()) / static_cast<float>(reader.iOCost)) * 100;
+		cout << "Error rate " << abs(errorRate - 100) << "%\n";
 
-		//auto o2 = chrono::high_resolution_clock::now();
-		//test->printResult();
-
-		//tM.tMOutcome(o1, o2);
-		llTempTime = exeTime;//tM.tMTest(o1, o2);
+		llTempTime = exeTime;
 		if (llTempTime < llMinTime) {
 			llMinTime = llTempTime;
 		}
