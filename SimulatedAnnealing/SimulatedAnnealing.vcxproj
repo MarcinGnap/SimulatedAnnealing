@@ -123,6 +123,58 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Graph.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="SimulatedAnnealing.cpp" />
+    <ClCompile Include="timeMeasurement.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h" />
+    <ClInclude Include="Reader.h" />
+    <ClInclude Include="SimulatedAnnealing.h" />
+    <ClInclude Include="timeMeasurement.h" />
+    <ClInclude Include="Timer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini" />
+    <None Include="Data\ftv170.atsp" />
+    <None Include="Data\ftv33.atsp" />
+    <None Include="Data\ftv38.atsp" />
+    <None Include="Data\ftv44.atsp" />
+    <None Include="Data\ftv55.atsp" />
+    <None Include="Data\ftv64.atsp" />
+    <None Include="Data\ftv70.atsp" />
+    <None Include="Data\gr21.tsp" />
+    <None Include="Data\gr24.tsp" />
+    <None Include="Data\gr96.tsp" />
+    <None Include="Data\kro124p.atsp" />
+    <None Include="Data\kroA100.tsp" />
+    <None Include="Data\kroB150.tsp" />
+    <None Include="Data\kroB200.tsp" />
+    <None Include="Data\pr152.tsp" />
+    <None Include="Data\rbg323.atsp" />
+    <None Include="results.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\10.txt" />
+    <Text Include="Data\12.txt" />
+    <Text Include="Data\13.txt" />
+    <Text Include="Data\14.txt" />
+    <Text Include="Data\15.txt" />
+    <Text Include="Data\17.txt" />
+    <Text Include="Data\21.txt" />
+    <Text Include="Data\6_1.txt" />
+    <Text Include="Data\6_2.txt" />
+    <Text Include="Data\tsp_10.txt" />
+    <Text Include="Data\tsp_12.txt" />
+    <Text Include="Data\tsp_13.txt" />
+    <Text Include="Data\tsp_14.txt" />
+    <Text Include="Data\tsp_15.txt" />
+    <Text Include="Data\tsp_17.txt" />
+    <Text Include="Data\tsp_6_1.txt" />
+    <Text Include="Data\tsp_6_2.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

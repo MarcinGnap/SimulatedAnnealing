@@ -14,4 +14,150 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="timeMeasurement.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Reader.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Graph.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="SimulatedAnnealing.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="timeMeasurement.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Reader.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="SimulatedAnnealing.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.ini">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="results.csv">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv33.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv38.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv44.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv55.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv64.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv70.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\ftv170.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\gr21.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\gr24.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\gr96.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\kro124p.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\kroA100.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\kroB150.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\kroB200.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\pr152.tsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+    <None Include="Data\rbg323.atsp">
+      <Filter>Pliki zasobów</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\6_1.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\6_2.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\10.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\12.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\13.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\14.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\15.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\17.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\21.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_6_1.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_6_2.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_10.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_12.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_13.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_14.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_15.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+    <Text Include="Data\tsp_17.txt">
+      <Filter>Pliki zasobów</Filter>
+    </Text>
+  </ItemGroup>
 </Project>
