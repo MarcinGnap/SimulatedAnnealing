@@ -52,7 +52,6 @@ int main() {
 		// parametry SA
 		vector<double> initTemp = { 2500.0 };
 		vector<double> minTemp = { 1.0008 };
-		vector<time_t> timeSA = { 5, 20 };
 
 		path.resize(myGraph->getSize() + 1);
 
@@ -60,20 +59,17 @@ int main() {
 
 		//auto o1 = chrono::high_resolution_clock::now();
 
-		for (int n = 0; n < timeSA.size(); ++n) {
+		cout << "Doing " << n << "time... \n";
+		test->settingsSimulatedAnnealing(initTemp[0], minTemp[0]);
+		exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost);
 
-			cout << "Doing " << n << "time... \n";
-			test->settingsSimulatedAnnealing(initTemp[0], minTemp[0], timeSA[n]);
-			exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost);
-
-			cout << "Time " << exeTime << " of sth\n";
-		}
+		cout << "Time " << exeTime << " of sth\n";
 
 		//auto o2 = chrono::high_resolution_clock::now();
 		//test->printResult();
 
 		//tM.tMOutcome(o1, o2);
-		llTempTime = 0;//tM.tMTest(o1, o2);
+		llTempTime = exeTime;//tM.tMTest(o1, o2);
 		if (llTempTime < llMinTime) {
 			llMinTime = llTempTime;
 		}
@@ -89,7 +85,6 @@ int main() {
 
 		initTemp.clear();
 		minTemp.clear();
-		timeSA.clear();
 	}
 	llAvgTimefloat = llAvgTime / reader.iRNumber;
 	outputFile << "Œredni czas wykonywania algorytmu [ns]: " << llAvgTimefloat << endl;

@@ -18,7 +18,6 @@ private:
 	double currentTemperature;
 
 	// czas wykonania
-	time_t executionTime;
 
 	// macierz
 	vector<vector<int>> matrix;
@@ -54,5 +53,5 @@ public:
 	double algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost);
 
 	// ustawienia Simulated Annealing
-	void settingsSimulatedAnnealing(double initialTemperature, double minTemperature, time_t stopTime);
+	void settingsSimulatedAnnealing(double initialTemperature, double minTemperature);
 };

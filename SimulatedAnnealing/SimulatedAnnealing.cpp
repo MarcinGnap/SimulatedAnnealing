@@ -22,11 +22,10 @@ SimulatedAnnealing::~SimulatedAnnealing() {
  * dopuszczane jest tak¿e przyjêcie z pewnym prawdopodobieñstwem gorszego od dotychczas najlepszego rozwi¹zania.
  */
 
-void SimulatedAnnealing::settingsSimulatedAnnealing(double maxTemperature, double minTemperature, time_t executionTime) {
+void SimulatedAnnealing::settingsSimulatedAnnealing(double maxTemperature, double minTemperature) {
 
 	this->maxTemperature = maxTemperature;
 	this->minTemperature = minTemperature;
-	this->executionTime = executionTime;
 }
 
 
@@ -129,7 +128,7 @@ double SimulatedAnnealing::algorithmSimulatedAnnealing(vector<vector<int>> origi
 	time_t check = 0;
 
 	// wykonywanie przez okreœlony czas lub do osi¹gniêcia minimalnej temperatury
-	while (currentTemperature > minTemperature && timer.stop() < executionTime) {
+	while (currentTemperature > minTemperature) {
 
 		// epoka: liczba kroków, po której zmniejszana jest temperatura
 		for (int era = 0; era < 100; ++era) {
