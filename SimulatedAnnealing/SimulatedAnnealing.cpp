@@ -94,7 +94,7 @@ bool SimulatedAnnealing::probability(int length1, int length2, double temperatur
 
 
 
-double SimulatedAnnealing::algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost) {
+double SimulatedAnnealing::algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost, int initEra) {
 
 	Timer timer;
 
@@ -131,7 +131,7 @@ double SimulatedAnnealing::algorithmSimulatedAnnealing(vector<vector<int>> origi
 	while (currentTemperature > minTemperature) {
 
 		// epoka: liczba kroków, po której zmniejszana jest temperatura
-		for (int era = 0; era < 100; ++era) {
+		for (int era = 0; era < initEra; ++era) {
 
 			do {
 				// losowanie 2 miast (ró¿nych i nierównych 0)

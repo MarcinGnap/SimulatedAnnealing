@@ -55,20 +55,24 @@ int main() {
 		// parametry SA
 		vector<double> initTemp = { 2500.0 };
 		vector<double> minTemp = { 1.0008 };
+		vector<double> initEra = {5, 10, 100, 1000};
 
 		path.resize(myGraph->getSize() + 1);
 
 		SimulatedAnnealing* test = new SimulatedAnnealing();
+		
+		// Tutaj petla ze zmianami + wrzucic wypluwanie wynikow w petle i wypluwanie do outputFile w petle.
+		for (int z = 0; z < initEra.size(); z++) {
+			cout << "\nDoing for " << initEra[z] << " eras... \n";
+			test->settingsSimulatedAnnealing(initTemp[0], minTemp[0]);
+			exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost, initEra[z]);
 
-		cout << "Doing " << n + 1 << " time... \n";
-		test->settingsSimulatedAnnealing(initTemp[0], minTemp[0]);
-		exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost);
-
-		cout << "Time " << exeTime << " of sth\n";
-		cout << "Found solution " << test->getfoundOptimum() << endl;
-		cout << "Optimal solution " << reader.iOCost << endl;
-		errorRate = (static_cast<float>(test->getfoundOptimum()) / static_cast<float>(reader.iOCost)) * 100;
-		cout << "Error rate " << abs(errorRate - 100) << "%\n";
+			cout << "Time " << exeTime << " s\n";
+			cout << "Found solution " << test->getfoundOptimum() << endl;
+			cout << "Optimal solution " << reader.iOCost << endl;
+			errorRate = (static_cast<float>(test->getfoundOptimum()) / static_cast<float>(reader.iOCost)) * 100;
+			cout << "Error rate " << abs(errorRate - 100) << "%\n \n";
+		}
 
 		llTempTime = exeTime;
 		if (llTempTime < llMinTime) {
