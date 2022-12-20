@@ -5,8 +5,9 @@
 class Reader
 {
 public:
-	int iRNumber;
-	int iOCost;
+	int iRNumber[16];
+	int iOCost[16];
+	std::string fileNames[16];
 	std::string sFilename;
 
 	int iNOfVertices;
@@ -16,9 +17,10 @@ public:
 	Reader();
 	~Reader();
 	bool OpenIni();
+	/*
 	int OpenTxt(std::string & sFilename);
 	int OpenTsp(std::string & sFilename);
 	int OpenAtsp(std::string & sFilename);
-
+	*/
 	int OpenAll(std::string & sFilename);
 };

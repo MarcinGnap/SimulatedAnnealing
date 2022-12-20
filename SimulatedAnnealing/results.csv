@@ -1,13 +1,27 @@
 Nazwa pliku: Data/gr96.tsp
-Powtórzenia algorytmu: 1
+Powtórzenia algorytmu: 10
 Optymalny koszt: 55209
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.99 minimalnej temperatury
+Rozwi¹zania dla 10 inicjalizacyjnej temperatury
 Rozwi¹zania dla 5 iloœci epok
-Otrzymany koszt, wspó³czynnik b³êdu[%], czas wykonywania[s]
-Czas wykonywania 0
-0
-Rozwi¹zania dla 10 iloœci epok
-Otrzymany koszt, wspó³czynnik b³êdu[%], czas wykonywania[s]
-Czas wykonywania 0
-1
-Rozwi¹zania dla 100 iloœci epok
-Otrzymany koszt, wspó³czynnik b³êdu[%], czas wykonywania[s]
+85118 ; 54.1741 ; 0.924495 ; 
+84525 ; 53.1 ; 0.934605 ; 
+92719 ; 67.9418 ; 0.926179 ; 
+91122 ; 65.0492 ; 0.926593 ; 
+94557 ; 71.271 ; 0.925571 ; 
+107192 ; 94.1568 ; 0.936036 ; 
+81632 ; 47.86 ; 0.928957 ; 
+97834 ; 77.2066 ; 0.93401 ; 
+104301 ; 88.9203 ; 0.93292 ; 
+95713 ; 73.3649 ; 0.923702 ; 
+Œredni czas wykonywania algorytmu [s]: 0.929307
+Œredni wspó³czynnik b³êdu [%]: 69.3045
+
+Optymalny koszt: 55209Rozwi¹zania dla 10 iloœci epok
+89367 ; 61.8703 ; 1.84066 ; 
+94758 ; 71.6351 ; 1.88858 ; 
+84251 ; 52.6037 ; 2.42899 ; 
+83427 ; 51.1112 ; 1.90486 ; 
+82292 ; 49.0554 ; 1.90487 ; 
+90298 ; 63.5567 ; 1.86094 ; 
+88920 ; 61.0607 ; 1.91076 ; 

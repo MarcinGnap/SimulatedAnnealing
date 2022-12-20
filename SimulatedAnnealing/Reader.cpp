@@ -3,9 +3,6 @@
 #include <iostream>
 
 Reader::Reader() {
-	iRNumber = 0;
-	iOCost = 0;
-	sFilename = " ";
 }
 
 Reader::~Reader() {
@@ -22,11 +19,12 @@ bool Reader::OpenIni() {
 	std::ifstream ifFileini("config.ini", std::ios::in);
 	if (ifFileini.good())
 	{
-		ifFileini >> sFilename;
-		ifFileini >> iRNumber;
-		ifFileini >> iOCost;
-
-		return Reader::OpenAll(sFilename);
+		for (int z = 0; z < 16; z++) {
+			ifFileini >> fileNames[z];
+			ifFileini >> iRNumber[z];
+			ifFileini >> iOCost[z];
+		}
+		//return Reader::OpenAll(sFilename);
 		/*
 		std::string sMatrixFile = sFilename.substr(sFilename.find_last_of(".") + 1);
 		if (sMatrixFile != "txt" && sMatrixFile != "tsp" && sMatrixFile != "atsp")
@@ -54,7 +52,7 @@ bool Reader::OpenIni() {
 	}
 	return false;
 }
-
+/*
 int Reader::OpenTxt(std::string & sFilename) {
 	std::cout << "Loading...\n";
 
@@ -395,7 +393,7 @@ int Reader::OpenAtsp(std::string & sFilename)
 
 	return 0;
 }
-
+*/
 int Reader::OpenAll(std::string & sFilename) {
 	std::cout << "Loading...\n";
 
