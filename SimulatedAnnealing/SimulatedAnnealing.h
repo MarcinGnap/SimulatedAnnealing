@@ -50,7 +50,7 @@ public:
 	~SimulatedAnnealing();
 
 	// algorytm Simulated Annealing
-	double algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost, int initEra);
+	double algorithmSimulatedAnnealing(vector<vector<int>> originalMatrix, vector<int> &bestPath, int &bestCost, int initEra, double dA);
 
 	int getfoundOptimum();
 

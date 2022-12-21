@@ -1,5 +1,4 @@
 #include "Reader.h"
-#include "timeMeasurement.h"
 #include "Graph.h"
 #include "SimulatedAnnealing.h"
 #include <iostream>
@@ -10,7 +9,6 @@ using namespace std;
 
 int main() {
 	Reader reader;
-	timeMeasurement tM;
 	fstream outputFile;
 
 	outputFile.open("results.csv", ios::out);
@@ -38,12 +36,14 @@ int main() {
 		Graph* myGraph = new Graph(reader.iNOfVertices, reader.iVertices);
 
 		cout << "\n \nGraph output: \n";
-		myGraph->display();
+		//myGraph->display();
 
 		cout << "Calculating...\n";
 
 		double llMinTime = INT_MAX;
 		double llMaxTime = 0;
+		double llMinErrorRate = INT_MAX;
+		double llMaxErrorRate = 0;
 
 		double llTempTime = 0;
 
@@ -52,13 +52,11 @@ int main() {
 		double exeTime;
 		float errorRate;
 
-		// parametry SA
-		vector<double> initTemp = { 10.0, 100.0, 1000.0 , 5000.0, 10000.0 };
-		vector<double> minTemp = { 0.99, 0.999, 0.9999, 0.99999, 0.999999 };
-		vector<double> initEra = { 5, 10, 100, 1000 };
+		vector<double> initTemp = { reader.tzero };
+		vector<double> minTemp = { reader.tmin };
+		vector<double> initEra = { reader.era };
 
 		path.resize(myGraph->getSize() + 1);
-		// Tutaj petla ze zmianami + wrzucic wypluwanie wynikow w petle i wypluwanie do outputFile w petle.
 
 		outputFile << "Otrzymany koszt: ;";
 		outputFile << "Wspó³czynnik b³êdu[%]: ;";
@@ -77,7 +75,7 @@ int main() {
 						SimulatedAnnealing* test = new SimulatedAnnealing();
 
 						test->settingsSimulatedAnnealing(initTemp[init], minTemp[min]);
-						exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost, initEra[z]);
+						exeTime = test->algorithmSimulatedAnnealing(myGraph->getMatrix(), path, cost, initEra[z], reader.dA);
 
 						errorRate = (static_cast<float>(test->getfoundOptimum()) / static_cast<float>(reader.iOCost[pliki])) * 100;
 						cout << "Error rate " << abs(errorRate - 100) << "%\n";
@@ -96,15 +94,26 @@ int main() {
 						else if (llTempTime > llMaxTime) {
 							llMaxTime = llTempTime;
 						}
+						if (abs(errorRate - 100) < llMinErrorRate) {
+							llMinErrorRate = abs(errorRate - 100);
+						}
+						else if (abs(errorRate - 100) > llMaxErrorRate) {
+							llMaxErrorRate = abs(errorRate - 100);
+						}
 						llAvgTime = llAvgTime + llTempTime;
 					}
 					cout << "Optimal solution " << reader.iOCost[pliki] << endl;
 
 					llAvgTimefloat = llAvgTime / reader.iRNumber[pliki];
-					outputFile << "Œredni czas wykonywania algorytmu [s]: " << llAvgTimefloat << endl;
-					outputFile << "Œredni wspó³czynnik b³êdu [%]: " << avrageErrorRate/reader.iRNumber[pliki] << endl << endl;
-					outputFile << "Optymalny koszt: " << reader.iOCost[pliki];
+					outputFile << "Œredni czas wykonywania algorytmu [s]: " << " ; " << llAvgTimefloat << endl;
+					outputFile << "Œredni wspó³czynnik b³êdu [%]: " << " ; " << avrageErrorRate/reader.iRNumber[pliki] << endl;
+					outputFile << "Optymalny koszt: " << " ; " << reader.iOCost[pliki] << endl << endl;
+					llAvgTimefloat = 0;
+					llAvgTime = 0;
+					llTempTime = 0;
 
+					cout << "Maksymalny wspolczynnik bledu: " << llMaxErrorRate << endl;
+					cout << "Minimalny wspolczynnik bledu: " << llMinErrorRate << endl;
 					cout << "Sredni wspolczynnik bledu: " << avrageErrorRate / reader.iRNumber[pliki] << endl;
 					cout << "Maksymalny czas wykonywania algorytmu: " << llMaxTime << endl;
 					cout << "Minimalny czas wykonywania algorytmu: " << llMinTime << endl;
@@ -117,7 +126,6 @@ int main() {
 		}
 		initTemp.clear();
 		minTemp.clear();
-
 
 		cout << "Done...\n";
 	}

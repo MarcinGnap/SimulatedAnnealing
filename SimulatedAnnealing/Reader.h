@@ -5,6 +5,10 @@
 class Reader
 {
 public:
+	double tzero;
+	double tmin;
+	double era;
+	double dA;
 	int iRNumber[16];
 	int iOCost[16];
 	std::string fileNames[16];

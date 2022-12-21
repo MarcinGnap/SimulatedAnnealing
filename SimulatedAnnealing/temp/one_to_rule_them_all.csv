@@ -1,0 +1,160 @@
+Nazwa pliku: Data/tsp_6_1.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 132
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.231197
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 132
+
+Nazwa pliku: Data/tsp_6_2.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 80
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.23341
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 80
+
+Nazwa pliku: Data/tsp_10.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 212
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.207624
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 212
+
+Nazwa pliku: Data/tsp_12.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 264
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.204163
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 264
+
+Nazwa pliku: Data/tsp_13.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 269
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.201368
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 269
+
+Nazwa pliku: Data/tsp_14.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 282
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.199531
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 282
+
+Nazwa pliku: Data/tsp_15.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 291
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.198857
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 291
+
+Nazwa pliku: Data/tsp_17.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 39
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.188199
+Œredni wspó³czynnik b³êdu [%]:  ; 0
+Optymalny koszt:  ; 39
+
+Nazwa pliku: Data/gr96.tsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 55209
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.305631
+Œredni wspó³czynnik b³êdu [%]:  ; 18.962
+Optymalny koszt:  ; 55209
+
+Nazwa pliku: Data/kroA100.tsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 21282
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.308126
+Œredni wspó³czynnik b³êdu [%]:  ; 24.4854
+Optymalny koszt:  ; 21282
+
+Nazwa pliku: Data/kroB150.tsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 26130
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.370376
+Œredni wspó³czynnik b³êdu [%]:  ; 32.8271
+Optymalny koszt:  ; 26130
+
+Nazwa pliku: Data/kroB200.tsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 29437
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.445334
+Œredni wspó³czynnik b³êdu [%]:  ; 43.8883
+Optymalny koszt:  ; 29437
+
+Nazwa pliku: Data/pr152.tsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 73682
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.375631
+Œredni wspó³czynnik b³êdu [%]:  ; 83.92
+Optymalny koszt:  ; 73682
+
+Nazwa pliku: Data/ftv170.atsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 2755
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.379721
+Œredni wspó³czynnik b³êdu [%]:  ; 66.1466
+Optymalny koszt:  ; 2755
+
+Nazwa pliku: Data/rbg323.atsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 1326
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.646166
+Œredni wspó³czynnik b³êdu [%]:  ; 24.8839
+Optymalny koszt:  ; 1326
+
+Nazwa pliku: Data/kro124p.atsp
+Powtórzenia algorytmu: 100
+Optymalny koszt: 36230
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.9999 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+Œredni czas wykonywania algorytmu [s]:  ; 0.308842
+Œredni wspó³czynnik b³êdu [%]:  ; 20.4864
+Optymalny koszt:  ; 36230
+

@@ -1,27 +1,39 @@
-Nazwa pliku: Data/gr96.tsp
-Powtórzenia algorytmu: 10
-Optymalny koszt: 55209
-Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 0.99 minimalnej temperatury
-Rozwi¹zania dla 10 inicjalizacyjnej temperatury
-Rozwi¹zania dla 5 iloœci epok
-85118 ; 54.1741 ; 0.924495 ; 
-84525 ; 53.1 ; 0.934605 ; 
-92719 ; 67.9418 ; 0.926179 ; 
-91122 ; 65.0492 ; 0.926593 ; 
-94557 ; 71.271 ; 0.925571 ; 
-107192 ; 94.1568 ; 0.936036 ; 
-81632 ; 47.86 ; 0.928957 ; 
-97834 ; 77.2066 ; 0.93401 ; 
-104301 ; 88.9203 ; 0.93292 ; 
-95713 ; 73.3649 ; 0.923702 ; 
-Œredni czas wykonywania algorytmu [s]: 0.929307
-Œredni wspó³czynnik b³êdu [%]: 69.3045
-
-Optymalny koszt: 55209Rozwi¹zania dla 10 iloœci epok
-89367 ; 61.8703 ; 1.84066 ; 
-94758 ; 71.6351 ; 1.88858 ; 
-84251 ; 52.6037 ; 2.42899 ; 
-83427 ; 51.1112 ; 1.90486 ; 
-82292 ; 49.0554 ; 1.90487 ; 
-90298 ; 63.5567 ; 1.86094 ; 
-88920 ; 61.0607 ; 1.91076 ; 
+Nazwa pliku: Data/tsp_6_1.txt
+Powtórzenia algorytmu: 100
+Optymalny koszt: 132
+Otrzymany koszt: ;Wspó³czynnik b³êdu[%]: ;Czas wykonywania[s] ;Rozwi¹zania dla 1 minimalnej temperatury
+Rozwi¹zania dla 1000 inicjalizacyjnej temperatury
+Rozwi¹zania dla 2500 iloœci epok
+132 ; 0 ; 0.250252 ; 
+132 ; 0 ; 0.24246 ; 
+132 ; 0 ; 0.243667 ; 
+132 ; 0 ; 0.24089 ; 
+132 ; 0 ; 0.242027 ; 
+132 ; 0 ; 0.240597 ; 
+132 ; 0 ; 0.241764 ; 
+132 ; 0 ; 0.238959 ; 
+132 ; 0 ; 0.239987 ; 
+132 ; 0 ; 0.238838 ; 
+132 ; 0 ; 0.237215 ; 
+132 ; 0 ; 0.238672 ; 
+132 ; 0 ; 0.234643 ; 
+132 ; 0 ; 0.237079 ; 
+132 ; 0 ; 0.237437 ; 
+132 ; 0 ; 0.235296 ; 
+132 ; 0 ; 0.237439 ; 
+132 ; 0 ; 0.237535 ; 
+132 ; 0 ; 0.236294 ; 
+132 ; 0 ; 0.238293 ; 
+132 ; 0 ; 0.236288 ; 
+132 ; 0 ; 0.237823 ; 
+132 ; 0 ; 0.235935 ; 
+132 ; 0 ; 0.236646 ; 
+132 ; 0 ; 0.238393 ; 
+132 ; 0 ; 0.240341 ; 
+132 ; 0 ; 0.236761 ; 
+132 ; 0 ; 0.237993 ; 
+132 ; 0 ; 0.238783 ; 
+132 ; 0 ; 0.238893 ; 
+132 ; 0 ; 0.24258 ; 
+132 ; 0 ; 0.239618 ; 
+132 ; 0 ; 0.23801 ; 

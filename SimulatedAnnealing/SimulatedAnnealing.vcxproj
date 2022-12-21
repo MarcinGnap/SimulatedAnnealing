@@ -127,14 +127,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Reader.cpp" />
     <ClCompile Include="SimulatedAnnealing.cpp" />
-    <ClCompile Include="timeMeasurement.cpp" />
     <ClCompile Include="Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h" />
     <ClInclude Include="Reader.h" />
     <ClInclude Include="SimulatedAnnealing.h" />
-    <ClInclude Include="timeMeasurement.h" />
     <ClInclude Include="Timer.h" />
   </ItemGroup>
   <ItemGroup>
