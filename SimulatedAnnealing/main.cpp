@@ -55,21 +55,22 @@ int main() {
 		vector<double> initTemp = { reader.tzero };
 		vector<double> minTemp = { reader.tmin };
 		vector<double> initEra = { reader.era };
+		vector<double> wspA = {reader.dA};
 
 		path.resize(myGraph->getSize() + 1);
 
 		outputFile << "Otrzymany koszt: ;";
 		outputFile << "Wspó³czynnik b³êdu[%]: ;";
 		outputFile << "Czas wykonywania[s] ;";
-		for (int min = 0; min < minTemp.size(); min++) {
-			cout << "\nDoing for " << minTemp[min] << " min temperature... \n\n";
-			outputFile << "Rozwi¹zania dla " << minTemp[min] << " minimalnej temperatury" << endl;
+		for (int min = 0; min < wspA.size(); min++) {
+			cout << "\nDoing for a = " << wspA[min] << " ... \n\n";
+			outputFile << "Rozwi¹zania dla " << wspA[min] << " wspó³czynnika a" << endl;
 			for (int init = 0; init < initTemp.size(); init++) {
 				cout << "\nDoing for " << initTemp[init] << " ini temperature... \n\n";
 				outputFile << "Rozwi¹zania dla " << initTemp[init] << " inicjalizacyjnej temperatury" << endl;
 				for (int z = 0; z < initEra.size(); z++) {
 					cout << "\nDoing for " << initEra[z] << " eras... \n\n";
-					outputFile << "Rozwi¹zania dla " << initEra[z] << " iloœci epok" << endl;
+					outputFile << "Rozwi¹zania dla " << initEra[z] << " d³ugoœci epoki" << endl;
 					double avrageErrorRate = 0;
 					for (int y = 0; y < reader.iRNumber[pliki]; y++) {
 						SimulatedAnnealing* test = new SimulatedAnnealing();
